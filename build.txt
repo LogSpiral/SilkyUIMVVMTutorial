@@ -1,0 +1,4 @@
+displayName = MVVM教程模组
+author = ?!MVVM!?
+version = 0.1
+modReferences = SilkyUIFramework

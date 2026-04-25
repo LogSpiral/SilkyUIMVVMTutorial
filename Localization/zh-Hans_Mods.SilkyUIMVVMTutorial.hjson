@@ -1,0 +1,29 @@
+Items: {
+	ZhuUIInteractor: {
+		DisplayName: 猪交互器(MVVM模式)
+		Tooltip:
+			'''
+			左键使用清空猪猪性
+			右键使用清空猪猪列表
+			'''
+	}
+
+	ZhuUIShower: {
+		DisplayName: 猪板显示器(MVVM模式)
+		Tooltip: 使用以打开SUI铸板
+	}
+
+	ZhuLegacyUIInteractor: {
+		DisplayName: 猪交互器(传统模式)
+		Tooltip:
+			'''
+			左键使用清空猪猪性
+			右键使用清空猪猪列表
+			'''
+	}
+
+	ZhuLegacyUIShower: {
+		DisplayName: 猪板显示器(传统模式)
+		Tooltip: 使用以打开原版风铸板
+	}
+}

@@ -1,0 +1,21 @@
+Items: {
+	ZhuUIInteractor: {
+		DisplayName: Zhu U I Interactor
+		Tooltip: ""
+	}
+
+	ZhuUIShower: {
+		DisplayName: Zhu U I Shower
+		Tooltip: ""
+	}
+
+	ZhuLegacyUIInteractor: {
+		DisplayName: Zhu U I Interactor
+		Tooltip: ""
+	}
+
+	ZhuLegacyUIShower: {
+		DisplayName: Zhu U I Shower
+		Tooltip: ""
+	}
+}

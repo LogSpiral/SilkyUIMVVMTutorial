@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Class 填写对应类名 -->
+<Body Class="MVVMTutorial.MVVMExample.View.ZhuUI"
+	Enabled="false" EnableBlur="true" BorderColor="#00000000" BackgroundColor="#00000000"
+	Gap="0" BorderRadius="8" FitWidth="true" FitHeight="true" Left="50#" Top="50#"
+	CrossAlignment="Stretch">
+	<ElementGroup Name="MainContainer"
+				  Border="2" BorderRadius="8" FitWidth="true" FitHeight="true"
+		FlexDirection="Column" CrossAlignment="Stretch">
+		<DraggableView Name="Header" FitWidth="true" Height="40px"
+			Padding="8 0" FlexDirection="Row" MainAlignment="Start" CrossAlignment="Center">
+			<!-- Title -->
+			<TextView Name="Title" Text="铸板" TextScale="0.4" FlexGrow="1" DisableMouseInteraction="true" />
+			<!-- 关闭 -->
+			<Image Name="Close" Width="30px" ImageAlign="1 0.5" Bind.Texture2D="CloseIcon" />
+		</DraggableView>
+		<HR BackgroundColor="rgba(0,0,0,0.75)" />
+		<ElementGroup FitWidth="true" FitHeight="true" FlexDirection="Column"
+			CrossAlignment="Stretch" Padding="8 0 8 12">
+			<ElementGroup Width="100%" Height="50px" FlexDirection="Row"
+			CrossAlignment="Center" Gap="6" Margin="0 8 0 8">
+				<ElementGroup FitWidth="true" FitHeight="true" FlexDirection="Column"
+				CrossAlignment="Center" Padding="6">
+					<ZhuButton Name="ZhuityButton" Width="23px" Height="23px" Bind.Command="IncreaseZhuityCommand"/>
+					<ZhuButton Name="ZhuListButton" Width="23px" Height="23px" Bind.Command="ExtendZhuListCommand"/>
+				</ElementGroup>
+				<TextView FitWidth="False" FitHeight="False" FlexShrink="1" FlexGrow="1"
+						  Width="100%" Height="75%" BackgroundColor="rgba(0,0,0,0.25)" 
+						  BorderRadius="8" TextAlign="0.5" Bind.Text="ZhuityText"/>
+			</ElementGroup>
+			<DataSourceScrollView Name="ZhuTextList" Width="384px" FlexGrow="1" 
+								  FlexShrink="1" Height="180px" BorderRadius="8" 
+								  BackgroundColor="rgba(0,0,0,0.25)" Bind.ItemSource="ZhuList">
+				<M.Mask Width="100%" Height="100%" />
+				<M.Container Width="100%" Padding="8" FlexWrap="true" 
+							 FitHeight="true" FlexDirection="Row" MainAlignment="Start"/>
+			</DataSourceScrollView>
+		</ElementGroup>
+	</ElementGroup>
+</Body>
