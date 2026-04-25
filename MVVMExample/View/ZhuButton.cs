@@ -24,8 +24,8 @@ public class ZhuButton : UIView
     {
         var position = Bounds.Position;
         if (IsPressing)
-            spriteBatch.Draw(ModAsset.ZhuPressed.Value, position, Color.Gray);
+            spriteBatch.Draw(ModAsset.ZhuPressed_Premultiplied.Value, position, Color.Gray);
         else
-            spriteBatch.Draw(ModAsset.ZhuReleased.Value, position, Color.White);
+            spriteBatch.Draw(ModAsset.ZhuReleased_Premultiplied.Value, position, Color.White);
     }
 }
