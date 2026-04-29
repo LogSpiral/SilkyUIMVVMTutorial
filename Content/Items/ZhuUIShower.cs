@@ -1,5 +1,5 @@
 ﻿using Microsoft.Xna.Framework;
-using MVVMTutorial.MVVMExample.View;
+using SilkyUIMVVMTutorial.MVVMExample.View;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;

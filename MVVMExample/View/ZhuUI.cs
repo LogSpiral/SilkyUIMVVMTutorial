@@ -9,7 +9,7 @@ using System.Collections.Generic;
 using Terraria.Audio;
 using Terraria.ID;
 
-namespace MVVMTutorial.MVVMExample.View;
+namespace SilkyUIMVVMTutorial.MVVMExample.View;
 
 [RegisterUI]
 public partial class ZhuUI : BaseBody
